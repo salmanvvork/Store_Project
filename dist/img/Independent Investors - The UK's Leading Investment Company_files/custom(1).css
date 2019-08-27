@@ -1,0 +1,2045 @@
+body{
+	 font-family:Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fonts/GoogleSans-Bold.eot');
+    src: local('Google Sans Bold'), local('GoogleSans-Bold'),
+        url('fonts/GoogleSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GoogleSans-Bold.woff2') format('woff2'),
+        url('fonts/GoogleSans-Bold.woff') format('woff'),
+        url('fonts/GoogleSans-Bold.ttf') format('truetype'),
+        url('fonts/GoogleSans-Bold.svg#GoogleSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.cal-text-above-123{
+color:#000000	!important;
+}
+
+.main-slider .slide {
+  padding: 220px 0px 100px 0px;
+   min-height:600px;
+}
+#muFormPopup{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8);  transition: opacity ease 0.3s; opacity: 0; z-index: -1; visibility: hidden;}
+.openModal #muFormPopup{z-index: 999; opacity: 1; visibility: visible; }
+#muFormPopOverlay{position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 2;}
+#muFormPopWrap{display: table; width: 100%; height: 100%; position: relative; z-index: 5; text-align: center;}
+#muFormPopCell{display: table-cell; vertical-align: middle;}
+#formPopContainer{max-width: 1000px;box-sizing: border-box;background: #fff;margin: 0 auto;width: 100%;border-radius: 10px;padding: 30px;position: relative;}
+#formPopContainer h3{text-align: center; color: #003668 !important; font-size: 22px; line-height: 1.45 !important; margin-bottom: 40px; font-weight: bold !important; max-width: 460px; margin-left: auto; margin-right: auto;}
+.formRow{margin: 0 -10px; overflow: hidden;}
+.formCol{width: 50%; box-sizing: border-box; padding: 0 10px; float: left;}
+.formElm{margin-bottom: 40px;}
+.formElm:last-child{margin-bottom: 0;}
+.formElm input[type="text"], .formElm input[type="email"], .formElm select{display: block;box-sizing: border-box;padding: 8px;border: solid 1px #ebebeb;width: 100%;box-sizing: border-box;background-color: #f8f8f8;border-radius: 5px;height: 42px;color: rgba(138, 139, 143, .8);font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;font-size: 13px;font-weight: 300;}
+#radioHolder p{margin-bottom: 10px; font-size: 14px; color: #003668 !important; text-align: left;}
+#radioHolder p:last-child{margin-bottom: 0;}
+#radioHolder .wpcf7-form-control.wpcf7-radio{display: block;}
+#radioHolder .wpcf7-form-control.wpcf7-radio > span{display: block; box-sizing: border-box; margin: 0; width: 50%; float: left; padding-right: 15px;}
+#radioHolder .wpcf7-form-control.wpcf7-radio > span label input{display: inline-block; width: auto; border: 0; padding: 0; margin-right: 7px; vertical-align: middle;}
+#radioHolder .wpcf7-form-control.wpcf7-radio > span label .wpcf7-list-item-label{display: inline-block; vertical-align: middle; line-height: 1;}
+#radioHolder{overflow: hidden;}
+
+.submitHolder{padding-top: 10px; text-align: right;}
+.submitHolder input{display: inline-block; line-height: 1; padding: 10px 45px; border-radius: 5px; background: #003668; color: #fff; font-weight: bold; transition: all ease-in 0.3s; border: solid 1px #003668; }
+.submitHolder input:hover{background: none; color: #003668; cursor: pointer; }
+#popClose{display: block; width: 25px; height: 25px; background-image: url(images/close.png); background-repeat: no-repeat; position: absolute; right: 0; top: -35px;}
+#popClose:hover{cursor: pointer; opacity: 0.5;}
+#muchaMenu{}
+.button-boxSticky{display: inline-block;vertical-align: middle;margin-left: 24px;float: left;margin-top: 15px;display: none;}
+#mobContactBtnHolder{display: none;}
+#mobContactBtnHolder > a{border-radius: 0; width: 100%; box-sizing: border-box; display: block; text-align: left; padding: 10px !important; background: #2c2c2c !important;}
+
+/*h1, h2, h3, h4, h5, h6{  font-family: 'Montserrat', sans-serif !important;}*/
+h1, h2, h3, h4, h5, h6{  font-family:Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;}
+#sliderRow{overflow: hidden;}
+#sliderRow .kc-col-container{position: relative;}
+#sliderRow .sliderFormWrapper {
+    position: absolute;
+    right: 50%;
+    top: 57%;
+    z-index: 5;
+    width: 400px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+    transform: translateY(-55%);
+    border-radius: 0px!important;
+    margin-right: -550px;
+}
+.sliderFormWrapper .formCol{width: 100%;}
+.sliderFormWrapper .formElm{margin-bottom: 15px;}
+.sliderFormWrapper h3{text-align: center;color: #3e3e3e !important;font-size: 18px;line-height: 1.45 !important;font-weight: bold !important;max-width: 460px;margin-left: auto;margin-right: auto;padding: 10px;text-transform: capitalize;padding-top: 0px;font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;}
+.sliderFormWrapper .submitHolder{text-align: center;}
+
+
+
+/**********************************
+RESPONSIVE STUFF
+**********************************/
+
+
+
+
+
+@media only screen and (min-width:960px) and (max-width:1140px){
+
+	.header-top{display: none;}
+	.main-header .header-upper .logo-box{width: auto;/* float: none; *//* text-align: center; *//* padding: 15px 0; */}
+	.main-header .nav-outer{/* float: none; *//* width: auto; *//* position: relative; *//* text-align: center; *//* margin: 0 -15px; *//* background: #fafafa; */position: relative;float: right;width: auto;}
+	.main-header .nav-outer .main-menu{/* float: none; *//* display: inline-block; */}
+	.main-header .header-upper .support-box{/* position: absolute; *//* margin: 0; *//* right:15px; *//* top: -60px; */margin-top: 32px;margin-left: 32px;}
+	.main-header .header-upper .button-box{padding: 0 !important; display: inline-block; position: absolute; top: -55px; margin: 0; left: 15px; }
+	.main-menu .navigation > li > a{padding: 10px 0;}
+	.main-menu .navigation > li {/* margin: 0 25px; */}
+	.main-slider .slide{padding: 205px 0px 128px 0;}
+	.main-slider h2{font-size: 32px; margin-bottom: 30px;}
+	.main-slider h2 br{display: none;}
+	.main-slider .active .text{width: 100% !important; margin-bottom: 0 !important;}
+	.main-slider .active .text .col-a1{column-count: 1;}
+	ul.list-5 li{/* position: relative; *//* padding-left: 30px; *//* margin-right: 0; *//* padding-right: 15px; *//* box-sizing: border-box; *//* width: 50%; *//* float: left; */}
+	ul.list-5 li:nth-child(2n+1){/* clear: both; */}
+	ul.list-5 li:before{position: absolute; left: 0; top: 5px;}
+	ul.list-5 li strong{display: block;}
+	
+	.services-section .inner-container{margin-top: 0;}
+	.about-section .title-column .inner-column{padding-top: 0;}
+	
+	
+	#About-Us .kc_single_image img{max-width: 640px; margin-left: auto; margin-right: auto; display: block;}
+	.call-to-action-section .right-column .inner-column{padding-left: 15px; padding-top: 90px; padding-bottom: 90px;}
+	
+	
+	.main-slider .auto-container .content{width: 50%;}
+	
+	
+}
+
+
+@media only screen and (min-width:768px) and (max-width:959px){
+	.header-top{display: none;}
+	.main-header .header-upper .logo-box{width: auto;/* float: none; *//* text-align: center; *//* padding: 15px 0; */}
+	.main-header .nav-outer{/* float: none; *//* width: auto; *//* position: relative; *//* text-align: center; *//* margin: 0 -15px; *//* background: #fafafa; */width: auto;float: right;}
+	.main-header .nav-outer .main-menu{/* float: none; *//* display: inline-block; */}
+	.main-header .header-upper .support-box{
+    margin-top: 32px;
+    margin-left: 20px;
+}
+	.main-header .header-upper .button-box{padding: 0 !important; display: inline-block; position: absolute; top: -55px; margin: 0; left: 15px; }
+	.main-menu .navigation > li > a{padding: 10px 0;}
+	.main-menu .navigation > li {margin: 0 13px;}
+	.main-slider .slide{padding: 135px 0;}
+	.main-slider h2{font-size: 32px; margin-bottom: 30px;}
+	.main-slider h2 br{display: none;}
+	.main-slider .active .text{width: 100% !important; margin-bottom: 0 !important;}
+	.main-slider .active .text .col-a1{column-count: 1;}
+	ul.list-5 li{position: relative; padding-left: 30px; margin-right: 0; padding-right: 15px; box-sizing: border-box; width: 100%; float: none;}
+	ul.list-5 li:nth-child(2n+1){clear: both;}
+	ul.list-5 li:before{position: absolute; left: 0; top: 5px;}
+	ul.list-5 li strong{display: block;}
+	.services-section{padding: 0px 0 0px 0;}
+	.services-section .inner-container{margin-top: 0;}
+	.about-section .title-column .inner-column{padding-top: 0;}
+	#About-Us{background: #f9f8fc;text-align: center;}
+	
+	#About-Us .kc_single_image img{max-width: 640px; margin-left: auto; margin-right: auto; display: block;}
+	.call-to-action-section .right-column .inner-column{padding-left: 15px;}
+	.services-block{flex: 0 0 50% !important; max-width: 50%;}
+	ul.list-5 li span br{display: none;}
+	.main-slider .auto-container .content{width: 50%;}
+	#sliderRow .sliderFormWrapper{right: 3%;padding: 23px 15px;width: 320px;margin-right: 0px;}
+	.sliderFormWrapper h3{margin-left: -15px; margin-right: -15px; margin-top: -15px; padding: 15px; font-size: 17px;}
+	.sliderFormWrapper #radioHolder .wpcf7-form-control.wpcf7-radio > span label .wpcf7-list-item-label{font-size: 13px;}
+	
+}
+	
+
+@media only screen and (max-width:767px){
+	#mobContactBtnHolder{display: none;}
+	.main-menu{text-align: right;margin-top: -72px;}
+.main-header .header-upper .button-box{position: absolute !important; margin-left: 0 !important; padding: 0 !important; display: inline-block !important; left: 175px; top: 12px;}
+	.main-menu .navbar-header{width: auto; display: inline-block;}
+	
+	#formPopContainer{max-width: 90%; padding: 15px; max-height: 90vh; }
+	#formPopContainer form{display: block; max-height: 80vh; overflow-y: auto; overflow-x: hidden;}
+	.formCol{width: 100%;}
+	.formElm input[type="text"], .formElm input[type="email"], .formElm select{width: 100%;}
+	.formElm{margin-bottom: 15px !important;}
+	.main-header .header-top{display: none;}
+	.main-slider .slide{padding: 65px 0;}
+	.main-slider h2{font-size: 26px; margin-bottom: 20px;}
+	.main-slider h2 br{display: none;}
+	.main-slider .active .text{width: 100% !important; margin-bottom: 0 !important;}
+	.main-slider .active .text .col-a1{column-count: 1;}
+	
+	
+	ul.list-5 li:nth-child(2n+1){/* clear: both; */}
+	ul.list-5 li:before{position: absolute; left: 0; top: 0px;}
+	ul.list-5 li strong{display: block;}
+	.services-section .inner-container{margin-top: 0;}
+	.services-block .inner-box{padding-top: 0px;padding-bottom: 0px;max-width: 300px;text-align: center;margin-left: auto;margin-right: auto;float: none;}
+	.services-block .inner-box .icon-box{display: none;}
+	.services-block .inner-box h3{margin-bottom: 5px;}
+	.services-block .inner-box .text{margin-bottom: 0;}
+	.services-section{padding-top: 35px;padding-bottom: 0px;}
+	.about-section{padding: 35px 0px 40px 0;border-top: solid #d9d6d6 1px;}
+	.about-section .title-column .inner-column{padding-top: 0; text-align: center;}
+	.about-section:before{width: 100%;}
+	.km.offer-section{padding: 0;}
+	#Our-Offerings{padding: 45px 0;}
+	#Our-Offerings .sec-title.centered{margin-bottom: 20px;}
+	.offer-block{max-width: 320px; margin-left: auto; margin-right: auto; text-align: center;}
+	.offer-block .inner-box .lower-content{padding-top: 15px;}
+	.offer-block .inner-box .lower-content .text{margin-bottom: 0;}
+	.offer-block:last-child{margin-bottom: 0;}
+	#About-Us .kc_text_block{text-align: center;}
+	.testimonial-section:before{display: none;}
+	.testimonial-section{text-align: center;}
+	.testimonial-block-two .inner-box .content-column .author{padding-left: 0;}
+	.testimonial-block-two .inner-box .content-column .author:before{display: none;}
+	.call-to-action-section .right-column .inner-column{box-sizing: border-box; padding-left:15px;}
+	.main-footer{padding: 0;}
+	.main-footer > .auto-container{padding: 45px 0;}
+	.main-footer .footer-widget{margin-bottom: 0; text-align: center;}
+	.main-footer .widgets-section{padding-bottom: 0;padding-left: 15px;padding-right: 15px;}
+	.main-footer .footer-bottom{padding: 15px 0;}
+	.footer-nav{display: none;}
+	.copyright p{margin-bottom: 0;}
+	.scroll-to-top{height: 40px; line-height: 40px; right: 5px; bottom: 5px;}
+	.footer-widget table tr{display: block;}
+	.footer-widget table tr td{display: block; padding:  5px 0;}
+	.main-footer{padding-left: 0px;padding-right: 0px;}
+	#sliderRow .sliderFormWrapper{display: none;}
+	
+}
+
+
+@media only screen and (max-width:768px) and (orientation:landscape){
+	#formPopContainer{max-width: 90%; padding: 15px; max-height: 80vh; }
+	#formPopContainer form{ max-height: 70vh; }
+}
+
+
+
+
+@media only screen and (max-width:450px){
+	#radioHolder .wpcf7-form-control.wpcf7-radio > span{float: none; padding-right: 0; width: 100%;}
+	#formPopContainer h3{font-size: 18px;}
+	.submitHolder{text-align: center;}
+	.support-box{display: none;}
+	.main-header .header-upper .button-box{left: 0; top: 15px;}
+	ul.list-5 li{width: 100%; float: none;}
+	
+}
+.button-box.v1-button-box-banner{
+	display:none;
+}
+@media only screen and (max-width:767px){
+	.main-slider .slide {
+    padding: 40px 0px 60px 0px !important;
+}
+	.main-menu ul.list-5 li span {
+    text-shadow: 1px 1px #000000;
+}
+	.main-menu .navbar-header{
+		     padding: 5px 0px 6px 0px;
+	}
+	.main-header .header-upper .logo-box {
+  padding-top: 17px !important;
+  width: auto;
+  float: left;
+  z-index: 99999;
+}
+.main-header .nav-outer{
+	
+}
+	.main-header .header-upper .button-box {
+    display: none !important;
+}
+
+.main-header .header-upper .support-box {
+    display: none;
+}
+
+.main-header .header-upper .support-box .support {
+    text-align: left;
+}
+	.button-box.v1-button-box-banner{
+	display:block;
+}
+.button-box.v1-button-box-banner a {
+    background:#288d01 !important;
+    padding: 10px 35px !important;
+    text-transform: uppercase;
+    font-weight: bold !important;
+      color:#ffffff !important;
+}
+.button-box.v1-button-box-banner a:hover{
+    background-color: #1f6b02 !important;
+}
+
+.button-box.v1-button-box-banner {
+ 
+    text-align: left;
+   margin-bottom: 0px !important;
+}
+.button-box.v1-button-box-banner {
+    margin-top: 10px;
+}
+.main-slider ul.list-5 li{
+   padding-right:0px;
+}
+}
+@media only screen and (max-width:380px){
+	.header-upper .logo img {
+    width: 132px;
+}
+    .main-slider h2 {
+       font-size: 22px;
+    margin-bottom: 15px;
+    max-width: 300px;
+}
+.main-slider ul.list-5 li span strong {
+    font-size: 18px!important;
+}
+.main-slider .slide {
+    padding: 40px 0px 60px 0px !important;
+}
+
+.main-slider ul.list-5 li{
+    margin-bottom:10px !important;
+    
+}
+}
+@media only screen and (max-width:350px){
+    .main-slider h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.main-slider .slide {
+    padding: 40px 0 !important;
+}
+.main-slider .slide {
+    padding: 65px 0;
+}
+
+}
+.banner-v1-slider h2 {
+    color: #022752  !important;
+    font-size: 16px !important;
+    letter-spacing: 0px !important;
+    margin-bottom: 20px;
+	line-height: 30px;
+}
+
+.v1-banner-main-outer h1 {
+   color: #1d1d1d !important;
+   font-size: 48px;
+   line-height: 55px !important;
+   margin-bottom: 20px;
+   font-weight: 300;
+   max-width: 500px;
+}
+.v1-banner-main-outer ul.list-5 li {
+    color: #000000 !important;
+    line-height: 12px;
+    margin-bottom: 10px !important;
+    font-family: 'Lora', serif;
+	font-weight: normal!important;
+    position: relative;
+    padding-left: 25px;
+}
+.v1-banner-main-outer ul.list-5 li:before {
+    content: url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/tick-b.png');
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    top: -1px !important;
+    position: absolute;
+    left: 0px;
+}
+.banner-v1-slider .auto-container .content {
+       margin-top: -90px;
+    margin-bottom: 90px;
+}
+.banner-v1-slider.main-slider .slide {
+    background-position: center !important;
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+.banner-v1-slider .auto-container .content {
+     margin-top: -20px;
+    margin-bottom: 20px; 
+}
+.banner-v1-slider h2 {
+    margin-bottom: 15px;
+    font-size: 14px !important;
+}
+}
+@media only screen and (max-width:767px){
+.v1-banner-main-outer h1 {
+  
+    font-size: 28px;
+    line-height: 33px !important;
+  
+}
+.banner-v1-slider .auto-container .content {
+       margin-top: 0px;
+    margin-bottom: 0px;
+}
+.banner-v1-slider.main-slider .slide {
+    background-position: center  bottom !important;
+    background-image: url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/mobile-banner.jpg') !important;
+    padding: 68px 0px 163px 0px !important;
+	    min-height: 300px;
+}
+}
+@media only screen and (max-width:380px){
+.v1-banner-main-outer h1 {
+   font-size: 24px;
+    line-height: 28px !important;
+}
+.banner-v1-slider h2 {
+    font-size: 12px !important;
+    margin-bottom: 10px;
+	    line-height: 25px;
+}
+}
+.kc-col-container input.wpcf7-form-control.wpcf7-submit {
+    background-color: #00b77e !important;
+    border: none;
+    width: 100%;
+    border-radius: 0px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color:#ffffff !important;
+    font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+    letter-spacing: .5px;
+    font-weight: 500;
+    border-radius: 0px !important;
+}
+.kc-col-container input.wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #0a815c !important;
+}
+
+.kc-col-container .submitHolder {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.v1-banner-main-outer h1 span.h1-span-1 {
+    font-weight: 600;
+    color: #1d1d1d;
+    font-family:Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;;
+}
+.v1-banner-main-outer h1 span.h1-span-2 {
+    font-weight: 600;
+    font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+   
+}
+
+
+/**************New edits ***********************/
+.main-header .header-upper {
+    position: absolute;
+    width: 100%;
+    background-color: transparent !important;
+}
+.logo img {
+    width: 160px;
+}
+.main-menu .navigation > li > a {
+    text-transform: uppercase;
+    padding: 33px 0px;
+}
+.support-box .support {
+    display: none;
+}
+
+.support-number {
+    background-color: transparent;
+   
+}
+.support-number a{
+  font-size:12px !important;
+  font-weight:normal;
+  background-color: #022752 !important;
+  color: #ffffff !important;
+  padding: 9px 26px 9px 43px;
+  border-radius: 0px;
+  line-height: 14px;
+}
+.support-number a:before{
+    font-family: 'FontAwesome';
+    font-style: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-rendering: auto;
+    speak: none;
+    font-weight: normal;
+    content:"";
+    position:absolute;
+    left: 20px;
+    content: "\f095";
+    transform:rotate(90deg);
+    top: 6px;
+}
+.main-slider-carousel .auto-container {
+    margin-top: 60px;
+}
+p.text-below-h3-123 {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.formCol-two-col-an-1234 .formElm {
+    width: 50%;
+    float: left;
+}
+.formCol-two-col-an-1234 .formElm:nth-child(1){
+    padding-right:2%;
+}
+.formCol-two-col-an-1234 .formElm:nth-child(2){
+    padding-left:2%;
+}
+.offer-ban-123456 {
+    position: absolute;
+    width: 120px !important;
+    height: auto;
+    left: -26%;
+    z-index: 7;
+    top: 50%;
+}
+::-webkit-input-placeholder{opacity:1;color:rgba(138, 139, 143, .8) !important;}
+::-moz-placeholder{opacity:1;color:rgba(138, 139, 143, .8) !important;}
+::-ms-input-placeholder{opacity:1;color:rgba(138, 139, 143, .8) !important;}
+::-moz-placeholder{opacity:1;color:rgba(138, 139, 143, .8) !important;}
+
+
+.services-section .inner-container {
+    margin-top: 0px;
+}
+#two-col-right-img-123456 .title-column.col-lg-5,
+#two-col-right-img-123456 .col-lg-7{
+       -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+#two-col-right-img-123456 .title-text{
+    padding-right:70px;
+
+}
+#two-col-right-img-123456 .title-text p:last-child{
+    margin-bottom:0px;
+}
+
+section#Why-Choose-BFI {
+      background-color: #f8f8f8!important;
+	  padding-bottom: 20px!important;
+}
+#About-Us h2 {
+    color: #2f2f2f !important;
+    font-size: 24px;
+    line-height: 32px !important;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+    max-width: 325px;
+    margin-top: 70px;
+}
+#About-Us h2 strong{
+     font-weight: 600;
+}
+
+#About-Us .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm {
+    padding-left:70px;
+    padding-top: 0px;
+}
+#About-Us .kc_col-sm-6:nth-child(1) {
+   background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-5-2.jpg');
+   background-size:cover;
+   background-position:center center;
+}
+#About-Us .kc_col-sm-6:nth-child(1) img{
+	opacity:0;
+}
+
+
+
+a.green-btn {
+    background-color: #00b77e !important;
+    border: none;
+    width: 100%;
+    border-radius: 0px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+   
+    letter-spacing: .5px;
+    font-weight: 500;
+   
+    font-size:14px;
+    padding: 6px;
+    margin-top: 31px;
+    display: block;
+    max-width: 255px;
+    text-align: center;
+    transition:all linear .3s;
+    margin-bottom: 70px;
+}
+a.green-btn:hover {
+    background-color: #0a815c !important;
+}
+section#Testimonials {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.testimonial-inner-123 {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+p.test-aut-123 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+p.test-aut-123-text {
+    margin-bottom: 15px;
+}
+#Testimonials h2,
+#About-Us-head h2{
+    text-align:center;
+}
+
+p.tiltle-below-test-head {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section#map-123-outer img{
+    opacity:0;
+}
+.map-content-123 {
+    position: absolute;
+    background-color: #ffffff;
+    top: 9px;
+    padding: 40px 40px;
+    left: 10px;
+    min-width: 400px;
+}
+
+.map-content-123 h3 {
+    color: #142f90 !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.map-content-123 p {
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+#map-123-outer .kc-col-container .kc-elm {
+    height: 340px;
+}
+.footer-widget ul li {
+    color: #ffffff;
+    padding: 14px 27px;
+    font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 500;
+}
+.footer-logo-123 .logo {
+    width: 20%;
+    float: left;
+}
+
+ul.footer-menu-list {
+    float: right;
+    width: 80%;
+    display: inline-block;
+    text-align: right;
+    /* padding: 20px 120px; */
+}
+.footer-content-123-inner-left {
+    width: 72%;
+    float: left;
+    padding-right: 8%;
+}
+
+.footer-content-123-inner-right {
+     width: 28%;
+     float: left;
+}
+
+.footer-content-123.clearfix {
+    margin-top: 50px;
+}
+
+.footer-content-123 h3 {
+    font-size: 17px;
+    font-family: Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+}
+
+p.footer-content-123-inner-right-p {
+    margin-top: 12px;
+    font-weight: 600;
+        color: #ffffff !important;
+}
+p.footer-content-123-inner-right-p a{
+	       color: #ffffff !important;
+}
+.threee-col-left-content {
+    text-align: right;
+    padding-right: 100px;
+}
+.threee-col-right-content{
+    text-align: left;
+}
+
+.threee-col-left-content  h3, .threee-col-right-content h3  {
+    color: #142f90 !important;
+    text-transform:uppercase;
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:5px
+}
+.threee-col-left-content p,
+.threee-col-right-content p{
+	color:#3f3f3f !important;
+}
+section#About-Us-head {
+    padding-top: 65px;
+    padding-bottom: 40px;
+    box-shadow: inset 0 7px 15px -7px rgba(0, 0, 0, 0.11);
+}
+section#About-Us-1234 {
+   
+    padding-bottom: 40px;
+   
+}
+
+.threee-col-right-content {
+    padding-left: 100px;
+}
+
+.threee-col-right-content h3:before{
+    position:absolute;
+    content:"";
+    width: 32px;
+    height: 17px;
+    left: -55px;
+    background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/new-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    top: -4px;
+   
+}
+.threee-col-left-content h3:before{
+    position:absolute;
+    content:"";
+    width: 32px;
+    height: 17px;
+    right: -55px;
+    background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/new-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    top: -4px;
+}
+.threee-col-left-content h3.n2:before{
+      background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/new-icon.png');
+}
+.threee-col-left-content h3.n3:before{
+      background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/new-icon.png');
+}
+.threee-col-right-content h3.n4:before{
+      background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/new-icon.png');
+}
+.threee-col-right-content h3.n5:before{
+      background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/new-icon.png');
+}
+.threee-col-right-content h3.n6:before{
+      background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/06/new-icon.png');
+}
+.owl-stage-outer.owl-height {
+    height: 100% !important;
+}
+@media only screen and (max-width: 1200px){
+.kc-container {
+       max-width: 1110px;
+}
+.threee-col-left-content {
+    
+    padding-right: 70px;
+}
+.threee-col-right-content {
+    
+    padding-left: 70px;
+}
+}
+@media only screen and (max-width: 1140px) and (min-width: 1025px){
+	.kc-container {
+       max-width: 980px;
+}
+.main-slider-carousel .auto-container {
+    margin-top: 61px;
+}
+.auto-container {
+    position: static;
+    max-width: 980px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+#sliderRow .sliderFormWrapper {
+   margin-right: -472px;
+}
+#two-col-right-img-123456 .title-text {
+    padding-right: 0px;
+}
+p {
+ 
+    margin-bottom: 15px;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 960px){
+	.footer-widget ul li {
+   
+    padding: 14px 15px;
+   
+}
+	#About-Us .kc-wrap-columns,
+#About-Us .kc_col-sm-6 {
+    height: 100%;
+}
+	.kc-container {
+    max-width: 900px;
+}
+.services-block{flex: 0 0 25% !important;  max-width: 25%; }
+.services-section{padding: 0px 0 0px 0;}
+#sliderRow .sliderFormWrapper {
+   margin-right: -426px;
+   width: 370px;
+   top: 60%;
+}
+.auto-container {
+   
+    max-width: 900px;
+  
+}
+.sliderFormWrapper h3 {
+   font-size: 20px;
+   line-height: 1.45 !important;
+}
+.v1-banner-main-outer h1 {
+    font-size: 41px;
+    line-height: 47px !important;
+}
+.main-slider-carousel .auto-container {
+    margin-top: 12px;
+}
+#two-col-right-img-123456 .title-text {
+    padding-right: 0px;
+}
+.about-section {
+  padding: 50px 0px 60px 0px;
+}
+#two-col-right-img-123456 .video-column img {opacity:0;}
+#two-col-right-img-123456 .video-column  {
+    background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-2.jpg');
+    background-size:cover;
+
+}
+.services-block .inner-box h3 a  {
+    font-size: 36px!important;
+   
+}
+.services-block .inner-box h3{
+    margin-bottom: 5px;
+    line-height: 40px;
+}
+.sec-title h2,
+#Testimonials h2, #About-Us-head h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+section#About-Us-head {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    box-shadow: inset 0 7px 15px -7px rgba(0, 0, 0, 0.11);
+}
+section#About-Us-1234 {
+    padding-bottom: 20px;
+}
+#About-Us .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm {
+    padding-left: 20px;
+    padding-top: 0px;
+}
+#About-Us h2 {
+   
+    margin-top: 50px;
+}
+a.green-btn {
+   
+    margin-bottom: 50px;
+}
+section#Testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+}
+@media only screen and (max-width: 959px) and (min-width: 768px){
+.services-block{flex: 0 0 25% !important;max-width: 25%;}
+.v1-banner-main-outer h1 {
+    font-size: 35px;
+    line-height: 41px !important;
+    max-width: 370px;
+}
+.offer-ban-123456 {
+    width: 98px !important;
+    left: -28%;
+    z-index: 7;
+    top: 50%;
+}
+p.text-below-h3-123 {
+   margin-bottom:20px
+}
+.services-block .inner-box h3 a {
+    font-size: 41px!important;
+}
+.services-block .inner-box h3 {
+    font-size: 39px!important;
+    line-height:45px;
+}
+.services-block .inner-box .text {
+ font-size: 16px;
+ line-height: 1.6em;
+}
+.about-section {
+  padding: 40px 0px 50px 0px;
+  background-color: #f8f8f8;
+}
+.sec-title h2, #Testimonials h2, #About-Us-head h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#two-col-right-img-123456 .video-column img {opacity:0;}
+#two-col-right-img-123456 .video-column  {
+    background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-2.jpg');
+    background-size:cover;
+
+}
+section#About-Us-head {
+    padding-top: 50px;
+    padding-bottom: 20px;
+   
+}
+section#About-Us-1234 {
+    padding-bottom: 20px;
+}
+#two-col-right-img-123456 .title-text {
+    padding-right: 20px;
+}
+	#About-Us .kc-wrap-columns,
+#About-Us .kc_col-sm-6 {
+    height: 100%;
+}
+#About-Us .kc_col-sm-6:nth-child(1) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-5-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#About-Us .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm {
+    padding-left: 20px;
+    text-align: left;
+    padding-right: 15px;
+}
+#About-Us h2 {
+   margin-top: 50px;
+   text-align: left;
+   font-size: 21px;
+   line-height: 28px !important;
+   margin-bottom: 14px;
+}
+#About-Us .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm p{
+	margin-bottom:15px;
+}
+a.green-btn {
+   
+    margin-bottom: 50px;
+}
+section#Testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.kc-container {
+    max-width: 750px;
+}
+.testimonial-inner-123 {
+   
+    padding: 30px 20px;
+}
+p.tiltle-below-test-head {
+ 
+    margin-bottom: 30px;
+}
+.main-footer {
+   
+    padding: 50px 0px 0px;
+  
+}
+.footer-widget ul li {
+   padding: 14px 11px;
+   font-size: 12px;
+}
+.footer-content-123 h3 {
+   
+    margin-bottom: 10px;
+    
+}
+.main-footer .footer-widget {
+ 
+    margin-bottom: 0px;
+}
+
+}
+section#forminmobile {
+    display: none;
+}
+.call-to-action-two .auto-container {
+    padding-top:50px;
+    text-align:left;
+}
+@media only screen and (max-width: 767px){
+section#forminmobile {
+    display: block;
+}
+div#desktabFormmob {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.sliderFormWrapper h3 {
+    font-size: 20px;
+    line-height: 1.4 !important;
+    padding-bottom: 5px;
+}
+
+.formRow {
+    padding: 0px 20px;
+}
+.formCol-two-col-an-1234 .formElm{
+    width:100%;
+}
+.formCol-two-col-an-1234 .formElm:nth-child(1),
+.formCol-two-col-an-1234 .formElm:nth-child(2) {
+    padding-right: 0%;
+     padding-left: 0%;
+}
+.offer-ban-123456 {
+    position: absolute;
+    width: 98px !important;
+    height: auto;
+    left: 2%;
+    z-index: 7;
+    top: -23%;
+}
+.kc-col-container .submitHolder {
+    margin-left: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.services-block .inner-box h3 a {
+    font-size: 48px!important;
+   
+}
+#two-col-right-img-123456 .title-column.col-lg-5, #two-col-right-img-123456 .col-lg-7 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#two-col-right-img-123456 .title-text {
+    padding-right: 0px;
+}
+.services-block{
+    margin-bottom:35px
+}
+.about-section .video-column {
+	margin-top:30px
+
+
+}
+section#About-Us-head {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    box-shadow: inset 0 7px 15px -7px rgba(0, 0, 0, 0.11);
+}
+.threee-col-left-content h3:before,
+.threee-col-right-content h3:before{
+	left:50%;
+	top: 1px;
+	right: auto;
+	margin-left: -21px;
+}
+.threee-col-left-content h3, .threee-col-right-content h3{
+	padding-top: 56px;
+	text-align: center;
+	position: relative;
+}
+.threee-col-left-content p, .threee-col-right-content p{
+	text-align:center;
+}
+.threee-col-left-content,
+.threee-col-right-content {
+    padding-right: 0px;
+     padding-left: 0px;
+}
+.sec-title h2,
+#Testimonials h2, #About-Us-head h2{
+	font-size: 26px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+#About-Us-head h2{
+	margin-bottom:10px
+}
+#About-Us-1234 .kc_col-sm-4 img {
+	margin-bottom:35px;
+}
+section#About-Us-1234 {
+    padding-bottom: 5px;
+}
+#About-Us .kc_col-sm-6:nth-child(1) img {
+    opacity: 1;
+}
+#About-Us .kc_col-sm-6:nth-child(1){
+	background-image:none;
+}
+#About-Us .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm {
+    padding-left: 15px;
+    padding-top: 0px;
+    text-align: left;
+    padding-right: 15px;
+}
+#About-Us h2 {
+   margin-top: 35px;
+   margin-bottom: 15px;
+}
+a.green-btn{
+	margin-bottom:40px
+}
+section#Testimonials {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+p.tiltle-below-test-head {
+    
+    margin-bottom: 30px;
+}
+section#Testimonials .kc_col-sm-12 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.testimonial-inner-123 {
+   margin-bottom:20px;
+}
+.footer-logo-123 .logo {
+    width: 100%;
+    float: none;
+    text-align: left;
+}
+ul.footer-menu-list {
+    float: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+}
+.footer-widget ul li{
+    display:block;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+.footer-content-123-inner-left,
+.footer-content-123-inner-right {
+    width: 100%;
+    float: none;
+    padding-right: 0%;
+}
+.footer-content-123.clearfix {
+    margin-top: 40px;
+    text-align:left;
+}
+.footer-content-123 h3 {
+   
+    margin-bottom: 10px;
+  
+}
+.footer-content-123-inner-left{
+    margin-bottom: 40px;
+}
+
+section#map-123-outer {
+   
+    height: 407px;
+}
+.map-content-123 {
+    position: relative;
+    background-color: #ffffff;
+    top: auto;
+    padding: 40px 40px;
+    left: 0px;
+    margin-top: -88px;
+}
+.call-to-action-two .text {
+   
+    margin-bottom: 20px;
+  
+}
+}
+
+p.showpopup-video-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    margin-bottom: 0px !important;
+    width: 95px;
+    height: 95px;
+}
+p.showpopup-video-p a {
+    position: relative;
+    width: 95px;
+    height: 95px;
+    color: transparent !important;
+    background-image: url('https://independentinvestors.co.uk/wp-content/uploads/2019/04/play-1.png');
+    background-size: contain;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+p.showpopup-video-img {
+    margin-bottom: 0px;
+}
+
+section#About-Us11 {
+    position: relative;
+}
+
+section#About-Us11 {
+    background-color: #2d49ac !important;
+}
+
+.why-investment-123 h2 {
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+.why-investment-123 p{
+     color: rgba(255, 255, 255, .7) !important;
+}
+.why-investment-123 p:last-child{
+	margin-bottom:70px;
+}
+
+a.watch-video-left {
+        color: rgba(255, 255, 255, .7) !important;
+        font-family:Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;t;
+        border-bottom: solid #ffffff 1px;
+        font-size: 14px;
+}
+a.watch-video-left:before{
+    content:"";
+    position:absolute;
+    width: 60px;
+    height: 14px;
+    background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/04/arrow2.png');
+    left: -55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10px;
+}
+
+
+
+.why-investment-123.kc-pc-loaded {
+    padding-left: 94px !important;
+    padding-right: 97px !important;
+}
+div#Forminbetweenconetnt {
+    background-color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    max-width: 440px;
+}
+div#Forminbetweenconetnt h3{
+    color:#3e3e3e !important;
+    text-transform:capitalize;
+    text-align:center;
+    font-size:21px;
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:600;
+
+}
+
+div#Forminbetweenconetnt  .formElm{
+     margin-bottom: 15px !important;
+}
+div#Forminbetweenconetnt .formCol{
+      width:100% !important;
+}
+p.big-aaa {
+    color: #022752 !important;
+    font-family:Arial , "Helvetica Neue", Helvetica, Gotham, sans-serif !important;
+    font-weight:600;
+    margin-bottom: 15px;
+}
+section#About-Us15 .kc-container {
+    padding-top: 40px !important;
+    border-top: solid #e7e7e7 1px;
+    padding-bottom: 40px !important;
+}
+#About-Us15 .kc_column.kc_col-sm-6:nth-child(1) {
+    width: 40%;
+}
+#About-Us15 .kc_column.kc_col-sm-6:nth-child(2) {
+    width: 57%;
+}
+
+
+
+.Forminbetweenconetnt-right a {
+    color: #3f3f3f;
+    font-weight: 600;
+    transition:all .3s linear ;
+}
+.Forminbetweenconetnt-right a:hover{
+    opacity:0.8
+}
+#About-Us11 .kc_col-sm-6:nth-child(1) {
+    background-image: url('https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-1.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 100%;
+}
+#About-Us11 .kc_col-sm-6:nth-child(1) .kc_text_block {
+    background-color:transparent;
+
+}
+#About-Us11 .kc_col-sm-6:nth-child(1) .kc_text_block img{
+    opacity:0;
+}
+#About-Us11 .kc-wrap-columns {
+    height: 100%;
+}
+@media only screen and (max-width: 1200px){
+.why-investment-123.kc-pc-loaded {
+    padding-left: 60px !important;
+    padding-right: 50px !important;
+  
+}
+  #formPopContainer{max-width: 1000px;}
+}
+@media only screen and (max-width: 1024px){
+	#formPopContainer{max-width: 800px;}
+.why-investment-123.kc-pc-loaded {
+    padding-left: 60px !important;
+    padding-right: 50px !important;
+}
+.why-investment-123 h2 {
+   
+    padding-top: 40px;
+}
+.why-investment-123 p:last-child{
+	margin-bottom:40px;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 959px){
+.why-investment-123.kc-pc-loaded {
+    padding-left: 30px !important;
+    padding-right: 50px !important;
+}
+.why-investment-123 h2 {
+   padding-top: 22px;
+   font-size: 28px;
+   margin-bottom: 10px;
+}
+.why-investment-123 p:last-child{
+	margin-bottom:40px;
+}
+.auto-container {
+   
+    max-width: 750px;
+   
+}
+
+div#Forminbetweenconetnt h3{
+   
+    font-size: 18px;
+   
+}
+div#Forminbetweenconetnt  p.text-below-h3-123 {
+    font-size: 10px;
+}
+div#Forminbetweenconetnt {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 22px;
+    max-width: 440px;
+}
+#About-Us15 .kc_column.kc_col-sm-6:nth-child(1) {
+    width: 43%;
+}
+#About-Us15 .kc_column.kc_col-sm-6:nth-child(2) {
+    width: 57%;
+}
+p.big-aaa {
+  
+    margin-bottom: 10px;
+}
+.Forminbetweenconetnt-right p{
+	 margin-bottom: 10px;
+}
+section#About-Us15 .kc-container {
+    padding-top: 50px !important;
+  
+    padding-bottom: 50px !important;
+}
+}
+@media only screen and (max-width: 767px) {
+	.map-content-123{
+		display:none;
+	}
+#About-Us11 .kc_col-sm-6:nth-child(1) {
+   
+    height: auto;
+}
+p.showpopup-video-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -27.5px;
+    margin-left: -27.5px;
+    margin-bottom: 0px !important;
+    width: 55px;
+    height: 55px;
+}
+p.showpopup-video-p a {
+    width: 55px;
+    height: 55px;
+    display: block;
+}
+.why-investment-123 h2{
+	font-size: 26px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.why-investment-123.kc-pc-loaded {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-bottom: 10px !important;
+}
+.why-investment-123 p:last-child{
+	display:none;
+}
+.why-investment-123 h2 {
+   
+    padding-top: 30px;
+}
+#About-Us15 .kc_column.kc_col-sm-6:nth-child(1) {
+    width: 100%;
+}
+#About-Us15 .kc_column.kc_col-sm-6:nth-child(2) {
+    width: 100%;
+}
+section#About-Us15 .kc-container {
+    padding-top: 43px !important;
+    padding-bottom: 10px !important;
+}
+div#Forminbetweenconetnt {
+    background-color: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+   
+}
+.Forminbetweenconetnt-right{
+	padding-left:0px !important;
+	padding-right:0px !important;
+	margin-top:30px 
+}
+#formPopContainer{max-width: 95%;}
+}
+span.wpcf7-not-valid-tip {
+    font-size: 11px;
+    line-height: 16px;
+}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    border: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+	    color: #3d3d3d !important;
+}
+.scroll-to-top.scroll-to-target {
+    background-color: #115098 !important;
+    border-radius: 50px;
+    height: 50px;
+}
+div.wpcf7-response-output{
+	display:none !important;
+}
+
+
+@media only screen and (min-width: 1025px) {
+p.showpopup-video-img {
+    position: absolute;
+    top: -10%;
+    height: 120%;
+    width: 80%;
+    left: 10%;
+    opacity: 1;
+    background-image:url('https://independentinvestors.co.uk/wp-content/uploads/2019/04/bk-1.jpg');
+    background-size:cover;
+
+}
+#About-Us11 .kc_col-sm-6:nth-child(1){
+    background-image:none;
+}
+
+section#About-Us11 {
+    z-index: 1;
+}
+.services-block .inner-box{
+    padding-top:55px;
+} 
+p.showpopup-video-p {
+  
+    margin-top: -65px;
+    margin-left: -65px;
+   
+    width: 130px;
+    height: 130px;
+}
+p.showpopup-video-p a {
+   
+    width: 130px;
+    height: 130px;
+   
+}
+
+}
+@media only screen and (min-width: 1150px) {
+.offer-ban-123456 {
+  
+    width: 145px !important;
+    height: auto;
+    left: -33%;
+  
+}
+}
+@media only screen and (min-width: 1400px) {
+#About-Us h2 {
+   
+    max-width: 500px;
+   
+}
+#About-Us .kc_col-sm-6:nth-child(1) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-5-4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+}
+#About-Us-1234 .kc-elm {
+    text-align: center;
+}
+
+#About-Us101 h2,
+#About-Us102 h2,
+#About-Us103 h2 ,
+#About-Us-cop101 h2,
+#About-UsSav102 h2,
+#About-UsSav103 h2 {
+    position: relative;
+    color: #2f2f2f !important;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+	    margin-top: 40px;
+}
+#About-Us101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us102 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm,
+#About-Us103 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us-cop101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us-Mutual .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm ,
+#About-UsSav102 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm ,
+#About-UsSav103 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm {
+	padding-left:70px;
+   
+}
+
+#About-Us101 .kc_text_block,
+#About-Us-cop101 .kc_text_block,
+#About-Us102 .kc_text_block,
+#About-Us103 .kc_text_block,
+#About-Us-Mutual .kc_text_block,
+#About-UsSav102 .kc_text_block,
+#About-UsSav103 .kc_text_block{
+	padding-bottom: 30px;
+}
+#About-Us-Mutual .kc_text_block{
+	padding-top: 70px;
+}
+#About-Us101 .kc_col-sm-6:nth-child(2) img,
+#About-Us-cop101 .kc_col-sm-6:nth-child(2) img,
+#About-Us102 .kc_col-sm-6:nth-child(1) img,
+#About-Us103 .kc_col-sm-6:nth-child(2) img,
+#About-Us-Mutual .kc_col-sm-6:nth-child(2) img,
+#About-UsSav102 .kc_col-sm-6:nth-child(2) img ,
+#About-UsSav103 .kc_col-sm-6:nth-child(1) img   {
+    opacity: 0;
+}
+#About-Us101 .kc_col-sm-6:nth-child(2) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/image2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#About-Us-cop101 .kc_col-sm-6:nth-child(2) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-corporate.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#About-Us102 .kc_col-sm-6:nth-child(1) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/image4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#About-Us103 .kc_col-sm-6:nth-child(2) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/image5.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#About-Us-Mutual .kc_col-sm-6:nth-child(2) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-mutual.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#About-UsSav102 .kc_col-sm-6:nth-child(2) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/safe-investment1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#About-UsSav103 .kc_col-sm-6:nth-child(1) {
+    background-image: url(https://independentinvestors.co.uk/wp-content/uploads/2019/04/image-mutual.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+@media only screen and (max-width: 1024px) and (min-width: 960px){
+#About-Us101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us102 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm,
+#About-Us103 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us-cop101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us-Mutual .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-UsSav102 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-UsSav103 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm   {
+	padding-left:20px;
+   
+}
+	#About-Us101 .kc-wrap-columns, #About-Us101 .kc_col-sm-6,
+#About-Us102 .kc-wrap-columns, #About-Us102 .kc_col-sm-6,
+#About-Us103 .kc-wrap-columns, #About-Us103 .kc_col-sm-6 ,
+#About-Us-cop101 .kc-wrap-columns, #About-Us-cop101 .kc_col-sm-6,
+#About-Us-Mutual .kc-wrap-columns, #About-Us-Mutual .kc_col-sm-6,
+#About-UsSav102 .kc-wrap-columns, #About-UsSav102 .kc_col-sm-6,
+#About-UsSav103 .kc-wrap-columns, #About-UsSav103 .kc_col-sm-6{
+    height: 100%;
+}
+#About-Us-Mutual .kc_text_block{
+	padding-top: 40px;
+}
+}
+@media only screen and (max-width: 959px) and (min-width: 768px){
+	#About-Us101 .kc-wrap-columns, #About-Us101 .kc_col-sm-6,
+#About-Us102 .kc-wrap-columns, #About-Us102 .kc_col-sm-6,
+#About-Us103 .kc-wrap-columns, #About-Us103 .kc_col-sm-6 ,
+#About-Us-cop101 .kc-wrap-columns, #About-Us-cop101 .kc_col-sm-6,
+#About-Us-Mutual .kc-wrap-columns, #About-Us-Mutual .kc_col-sm-6,
+#About-UsSav102 .kc-wrap-columns, #About-UsSav102 .kc_col-sm-6,
+#About-UsSav103 .kc-wrap-columns, #About-UsSav103 .kc_col-sm-6{
+    height: 100%;
+}
+#About-Us101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us102 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm,
+#About-Us103 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us-cop101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us-Mutual .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-UsSav102 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-UsSav103 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm{
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 10px;
+}
+#About-Us101 h2,
+#About-Us102 h2,
+#About-Us103 h2,
+#About-Us-cop101 h2,
+#About-Us-Mutual h2 ,
+#About-UsSav102 h2,
+#About-UsSav103 h2 {
+   
+    text-transform: capitalize;
+	    margin-top: 20px;
+}
+#About-Us101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm p,
+#About-Us102 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm p,
+#About-Us103 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm p,
+#About-Us-cop101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm p,
+#About-Us-Mutual .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm p,
+#About-UsSav102 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm p ,
+#About-UsSav103 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm p  {
+    margin-bottom: 15px;
+}
+#About-Us-Mutual .kc_text_block{
+	padding-top: 40px;
+}
+}
+@media only screen and (max-width: 767px){
+#About-Us101 .kc_col-sm-6:nth-child(1) img ,
+#About-Us102 .kc_col-sm-6:nth-child(2) img,
+#About-Us103 .kc_col-sm-6:nth-child(1) img ,
+#About-Us-cop101 .kc_col-sm-6:nth-child(2) img,
+#About-Us-Mutual  .kc_col-sm-6:nth-child(2) img,
+#About-UsSav102  .kc_col-sm-6:nth-child(2) img ,
+#About-UsSav103  .kc_col-sm-6:nth-child(1) img  {
+    opacity: 1;
+}
+#About-Us101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us102 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm,
+#About-Us103 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm ,
+#About-Us-cop101 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-Us-Mutual .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-UsSav102 .kc_col-sm-6:nth-child(1) .kc-col-container .kc-elm,
+#About-UsSav103 .kc_col-sm-6:nth-child(2) .kc-col-container .kc-elm  {
+    padding-left: 15px;
+    padding-top: 0px;
+    text-align: left;
+    padding-right: 15px;
+	    padding-bottom: 10px;
+}
+#About-Us-Mutual .kc_text_block{
+	padding-top: 35px !important;
+}
+#About-Us101 .kc-wrap-columns,
+#About-Us103 .kc-wrap-columns,
+#About-Us-cop101 .kc-wrap-columns,
+#About-Us-Mutual .kc-wrap-columns,
+#About-UsSav102 .kc-wrap-columns{
+	display: table !important;
+}
+#About-Us101 .kc_col-sm-6:nth-child(1),
+#About-Us103 .kc_col-sm-6:nth-child(1),
+#About-Us-cop101 .kc_col-sm-6:nth-child(1),
+#About-Us-Mutual .kc_col-sm-6:nth-child(1),
+#About-UsSav102 .kc_col-sm-6:nth-child(1){
+	    display: table-footer-group !important;
+	    width: 100%;
+	    float: none;
+}
+#About-Us101 .kc_col-sm-6:nth-child(2),
+#About-Us103 .kc_col-sm-6:nth-child(2),
+#About-Us-cop101 .kc_col-sm-6:nth-child(2),
+#About-Us-Mutual .kc_col-sm-6:nth-child(2),
+#About-UsSav102 .kc_col-sm-6:nth-child(2){
+	    display: table-header-group !important;
+	    width: 100%;
+	    float: none;
+}
+#About-Us101 h2, #About-Us102 h2, #About-Us103 h2 ,#About-Us-cop101 h2, #About-Us-Mutual h2, #About-UsSav102 h2,  #About-UsSav103 h2 {
+    
+    margin-top: 35px;
+}
+#About-Us-Mutual .kc_text_block{
+	padding-top: 35px;
+}
+}
+
+
+/***************Calulator **********/
+.home-section-calculator{
+    padding-top:60px !important;
+    padding-bottom:60px !important;
+}
+#outer-an{width: 100%;text-align:center;border-color: #cdcdcd;height: auto;background: rgba(220, 220, 220, 1) !important;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;margin-bottom: 20px;/* max-width: 800px; */margin-left: auto;margin-right: auto;padding-top: 10px;}
+
+.outer-an-main-123{table-layout:fixed;width: 100%;border-collapse:collapse;margin:0 auto;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;}
+.outer-an-main-123 td{padding: 10px 31px;vertical-align:middle;text-align:left;border:0;font:500 11px arial;}
+.outer-an-main-123 input{width: 100%;border:1px solid #ccc;margin:2px 0;padding:0 2%;height: 30px;text-align:right;font:500 11px arial;min-width: 0;border: 1px solid rgba(225, 225, 225, 1) !important;background-color: rgba(255, 255, 255, 1) !important;border-radius: 4px !important;font-weight: normal !important;font-family: 'Open Sans', sans-serif !important;font-size: 13px !important;color: #000000 !important;box-sizing: border-box !important;text-align: left !important;}
+
+.outer-an-main-123 select{
+    padding-left:5px;
+    width:100%;
+    border:1px solid #ccc;
+    margin:2px 0;
+    background:#fff;
+    height: 30px;
+    font:500 11px arial;
+    min-width: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 1px solid rgba(225, 225, 225, 1) !important;
+    background-color: rgba(255, 255, 255, 1) !important;
+    border-radius: 4px !important;
+    font-weight: normal !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    color: #000000 !important;box-sizing: border-box !important;text-align: left !important;
+}
+.cal-outer-an-123-col  p {
+    display: none;
+}
+
+.cal-outer-an-123-col  p {
+    display: none;
+}
+
+.home-section-calculator .sectionHeading1 {
+    color: #022752 !important;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.home-section-calculator {
+   border-top: solid #dedddd 1px;
+}
+.outer-an-main-123 button{width:100%;font:600 12px arial;margin:2px 0;}
+
+#outer-an label {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    color: rgba(0, 0, 0, 1) !important;
+    text-align: left;
+    line-height: 13px;
+}
+
+#outer-an table tr{
+    border:0;
+}
+#outer-an table tr:last-child{
+    background-color:rgba(0, 41, 80, 1) !important;
+}
+#outer-an table tr:last-child label{
+   color: #ffffff !important;
+}
+.outer-an-main-123 tr:last-child td{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.cal-outer-an-123-col {
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+div#outer-an .cal-outer-an-123:last-child {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: #022752!important;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 17px;
+}
+
+.cal-outer-an-123 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div#outer-an .cal-outer-an-123:last-child label {
+    color: #ffffff !important;
+}
+
+div#inttamt {
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 25px !important;
+    color: rgba(255, 255, 255, 1) !important;
+    line-height: 1 !important;
+    text-align: left !important;
+}
+button#btbCalComp {
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        box-sizing: border-box;
+        width: 50%;
+        font-size: 12px !important;
+        padding: 7px 0px !important;
+        border: solid #000000 1px;
+        border-radius: 3px;
+        color: #000000;
+        font-weight: 600;
+        transition: all linear .3s;
+        margin-top: 15px;
+        background-color: transparent;
+}
+button#btbCalComp:hover {
+    background-color: #242424;
+    color: #ffffff;
+}
+@media only screen and (max-width: 1199px){
+	#outer-an {
+    
+padding-top: 10px;
+}
+.home-section-calculator{
+    padding-top:55px !important;
+    padding-bottom:55px !important;
+}
+.cal-outer-an-123 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.home-section-calculator .kc_col-sm-7{
+    width: 57.666667% !important;
+}
+.home-section-calculator .kc_col-sm-5{
+    width: 42.333333% !important;
+}
+}
+@media only screen and (max-width: 1024px){
+.home-section-calculator .kc_col-sm-5 .kc_text_block {
+    padding: 18px 20px 0px 40px !important;
+}
+}
+@media only screen and (max-width: 990px){
+	.home-section-calculator .kc_col-sm-7{
+	        width: 55.666667% !important;
+	}
+	.home-section-calculator .kc_col-sm-5{
+	        width: 44.333333% !important;
+    }
+    .home-section-calculator {
+     
+        padding-bottom: 25px !important;
+    }
+	p.cal-text-above-123 {
+    
+padding-right: 0px;
+}
+#outer-an {
+    padding-top: 30px;
+}
+.cal-outer-an-123-col {
+   
+    padding-left: 5px;
+    padding-right: 5px;
+   
+}
+
+}
+@media only screen and (max-width: 767px){
+    .home-section-calculator .kc_col-sm-5 .kc_text_block {
+        padding: 0px 0px 0px 0px !important;
+    }
+    #outer-an {
+    padding-top: 20px;
+}
+.home-section-calculator{
+    padding-top:35px !important;
+    padding-bottom:35px !important;
+}
+.home-section-calculator .kc_col-sm-7{
+	        width: 100% !important;
+	        margin-bottom:0px;
+	}
+.home-section-calculator .kc_col-sm-5{
+	        width: 100% !important;
+	}
+    .cal-outer-an-123-col {
+   
+width: 100%;
+   
+padding-left: 15px;
+   
+padding-right: 15px;
+   
+margin-bottom: 4px !important;
+}
+button#btbCalComp{
+	    margin-top: 15px;
+}
+.cal-outer-an-123 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+div#outer-an .cal-outer-an-123:last-child {
+   
+margin-top: 19px;
+   
+padding-top: 10px;
+   
+padding-bottom: 5px;
+}
+}
+
+.test-aut-123-img img{
+border:solid 1px #022752!important;	
+}
+#About-Us{
+display:none!important;		
+}
+.we-hel{
+	text-align: center!important;	 color: #022752!important;	 font-size: 20px!important;	
+}
+
+
+@media only screen and (max-width: 767px)
+
+	{
+.main-menu .navbar-header .navbar-toggler {
+    background: #115098!important;
+    border: 1px solid #115098!important;
+}
+}
